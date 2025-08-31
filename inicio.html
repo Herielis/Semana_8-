@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Rápida</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2c2c2c;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ff69b4;
+        }
+
+        /* Main Content */
+        main {
+            background-color: #333;
+            padding: 2rem;
+            min-height: calc(100vh - 200px);
+        }
+
+        .content-area {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            border-radius: 8px;
+        }
+
+        .content-area p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        /* Menu Grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .browsers {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .browsers:nth-child(1) { background-color: #ffcccb; }
+        .browsers:nth-child(2) { background-color: #add8e6; }
+        .browsers:nth-child(3) { background-color: #98fb98; }
+        .browsers:nth-child(4) { background-color: #dda0dd; }
+        .browsers:nth-child(5) { background-color: #f0e68c; }
+        .browsers:nth-child(6) { background-color: #ffd4b3; }
+
+        .browsers h2 {
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            padding: 1.5rem;
+            margin: 0;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .browsers p {
+            padding: 2rem;
+            margin: 0;
+            color: #333;
+            font-size: 1.1rem;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(255,255,255,0.9);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Comida rapida
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="content-area">
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <article class="browsers">
+                    <h2>Economicas</h2>
+                    <p></p>
+                </article>
+                
+                <article class="browsers">
+                    <h2>Economicas</h2>
+                    <p>Benvenido comidas rapidas</p>
+                </article>
+                
+                <article class="browsers">
+                    <h2>Economicas</h2>
+                    <p>Benvenido comidas rapidas</p>
+                </article>
+                
+                <article class="browsers">
+                    <h2>Economicas</h2>
+                    <p>Benvenido comidas rapidas</p>
+                </article>
+                
+                <article class="browsers">
+                    <h2>Economicas</h2>
+                    <p></p>
+                </article>
+                
+                <article class="browsers">
+                    <h2>Economicas</h2>
+                    <p></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Restringido
+    </footer>
+</body>
+</html>
